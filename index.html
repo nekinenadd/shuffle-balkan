@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shuffle Balkan</title>
+
+  <link rel="icon" type="image/png" href="assets/media/maloboljarez.png">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- THEME TOGGLE -->
+<div class="theme-toggle" id="themeToggle">
+  <div class="icon"></div>
+</div>
+
+<!-- HERO -->
+<section class="hero-mosaic">
+  <!-- Mosaic background -->
+  <div class="mosaic-grid">
+    <img src="./assets/media/mozdaprvasekcija.JPG" alt="Dance 1">
+    <img src="./assets/media/nastup.JPG" alt="Dance 2">
+    <img src="./assets/media/zenskamajicanamodelu.JPG" alt="Dance 3">
+    <img src="./assets/media/randomkulslika.JPG" alt="Dance 4">
+    <img src="./assets/media/zenskemajice.jpg" alt="Dance 5">
+  </div>
+
+   <!-- Overlay image -->
+  <div class="hero-overlay">
+    <img
+      src="./assets/media/maloboljarez.png"
+      alt="Shuffle Balkan"
+      class="hero-overlay-img"
+    >
+  </div>
+
+</section>
+
+
+<!-- SLOGAN -->
+<section class="slogan-section fade-in">
+  <div class="container">
+    <h2 class="slogan-text">
+      Dance is not a style it’s a <span>culture</span>
+    </h2>
+  </div>
+</section>
+
+
+
+<!-- MID PAGE SECTION -->
+<section class="mid-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left text -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2>Video tutorijali</h2>
+        <p>
+          Pored treninga, članovi dobijaju video-tutorijale i savete za vežbanje kod kuće.
+        </p>
+      </div>
+
+      <!-- Right video -->
+      <div class="col-md-6">
+        <div class="video-wrapper">
+          <video autoplay muted loop playsinline>
+            <source src="assets/media/mozeovajsnimakzapocetnu.MP4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- STATEMENT SECTION -->
+ <section class="statement-section fade-in">
+  <div class="container">
+    <p class="statement-text">
+      <span>Prvi balkanski Shuffle klub</span><br>
+    </p>
+  </div>
+</section>
+
+
+<!-- STORE CARDS SECTION -->
+<section class="store-info py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Store Card -->
+      <div class="col-md-6">
+        <div class="store-card premium">
+          <img src="assets/media/sala1.jpeg" alt="Store 1">
+          <div class="store-overlay">
+            <h5>Novi Sad</h5>
+            <p>Liman, Fruskogorska 30</p>
+            <span>Ponedeljak i Sreda 19:00 - 21:00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Store Card -->
+      <div class="col-md-6">
+        <div class="store-card premium">
+          <img src="assets/media/sala2.jpeg" alt="Store 2">
+          <div class="store-overlay">
+            <h5>Beograd</h5>
+            <p>Autokomanda, Bokeljska 2</p>
+            <span>Utorak i Cetvrtak 19:00 - 20:00</span>
+          </div>
+        </div>
+      </div>
+      
+       <!-- Store Card -->
+      <div class="col-md-6">
+        <div class="store-card premium">
+          <img src="assets/media/sala2.jpeg" alt="Store 2">
+          <div class="store-overlay">
+            <h5>Beograd</h5>
+            <p>Autokomanda, Bokeljska 2</p>
+            <span>Utorak i Cetvrtak 19:00 - 20:00</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- REZERVISI TRENING SECTION -->
+<section class="reserve-cta">
+  <div class="container text-center">
+    <button
+      class="btn reserve-btn"
+      data-bs-toggle="modal"
+      data-bs-target="#reserveModal"
+    >
+      Rezervisi trening
+    </button>
+  </div>
+</section>
+
+
+<!-- STORE SECTION -->
+<section class="products" id="store">
+  <div class="container">
+    <h2 class="mb-4">Merch</h2>
+
+    <div class="scroll-row">
+      <div class="product" data-bs-toggle="modal" data-bs-target="#p1">
+        <img src="./assets/media/duksevi.jpg" alt="Black T-Shirt" class="product-img">
+        <div class="product-info">
+          <h5>Gornji Deo Trenerke</h5>
+          <div class="price">3000 RSD</div>
+        </div>
+      </div>
+
+      <div class="product" data-bs-toggle="modal" data-bs-target="#p2">
+        <img src="./assets/media/zenskamajica.png" alt="Black T-Shirt" class="product-img">
+        <div class="product-info">
+          <h5>Zenska Majica</h5>
+          <div class="price">3000 RSD</div>
+        </div>
+      </div>
+
+      <div class="product" data-bs-toggle="modal" data-bs-target="#p3">
+        <img src="./assets/media/trenerka (3).jpg" alt="Black T-Shirt" class="product-img">
+        <div class="product-info">
+          <h5>Muska Trenerka</h5>
+          <div class="price">3000 RSD</div>
+        </div>
+      </div>
+
+      <div class="product" data-bs-toggle="modal" data-bs-target="#p4">
+        <img src="./assets/media/muskemajice.jpg" alt="Black T-Shirt" class="product-img">
+        <div class="product-info">
+          <h5>Unisex Majica</h5>
+          <div class="price">3000 RSD</div>
+        </div>
+      </div>
+
+      <div class="product" data-bs-toggle="modal" data-bs-target="#p5">
+        <img src="./assets/media/sorc.jpeg" alt="Black T-Shirt" class="product-img">
+        <div class="product-info">
+          <h5>Sorc</h5>
+          <div class="price">3000 RSD</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- BTN MODAL -->
+<div class="modal fade" id="reserveModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content reserve-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Rezervisi svoj prvi trening</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <p class="mb-4">
+          Kako bismo potvrdili tvoju rezervaciju, kontaktiraj nas putem jednog od sledeca dva nacina:
+        </p>
+
+        <a
+          href="https://www.instagram.com/YOURINSTAGRAM"
+          target="_blank"
+          class="contact-option instagram"
+        >
+          Instagram DM
+        </a>
+
+        <a
+          href="https://wa.me/YOURPHONENUMBER"
+          target="_blank"
+          class="contact-option whatsapp"
+        >
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- PRODUCT MODAL -->
+<div class="modal fade" id="p1" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content p-4">
+      <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
+
+      <img src="./assets/media/duksevi.jpg" class="mb-4">
+
+      <h3>Gornji Deo Trenerke</h3>
+      <p class="text-muted">3000 RSD</p>
+      <p>Relax fit</p>
+
+      <div class="size-selector d-flex gap-2 mt-3">
+        <button class="active" data-size="S">S</button>
+        <button data-size="M">M</button>
+        <button data-size="L">L</button>
+      </div>
+      <button class="order-btn" disabled>
+        Order via Email
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="p2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content p-4">
+      <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
+
+      <img src="./assets/media/zenskamajica.png" class="mb-4">
+
+      <h3>Zenska Majica</h3>
+      <p class="text-muted">3000 RSD</p>
+      <p>Relax fit</p>
+
+      <div class="size-selector d-flex gap-2 mt-3">
+        <button class="active" data-size="S">S</button>
+        <button data-size="M">M</button>
+        <button data-size="L">L</button>
+      </div>
+      <button class="order-btn" disabled>
+        Order via Email
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="p3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content p-4">
+      <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
+
+      <img src="./assets/media/trenerka (3).jpg" class="mb-4">
+
+      <h3>Donji Deo Trenerke</h3>
+      <p class="text-muted">3000 RSD</p>
+      <p>Relax fit</p>
+
+      <div class="size-selector d-flex gap-2 mt-3">
+        <button class="active" data-size="S">S</button>
+        <button data-size="M">M</button>
+        <button data-size="L">L</button>
+      </div>
+      <button class="order-btn" disabled>
+        Order via Email
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="p4" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content p-4">
+      <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
+
+      <img src="./assets/media/muskemajice.jpg" class="mb-4">
+
+      <h3>Unisex Oversized Majica</h3>
+      <p class="text-muted">3000 RSD</p>
+      <p>Relax fit</p>
+
+      <div class="size-selector d-flex gap-2 mt-3">
+        <button class="active" data-size="S">S</button>
+        <button data-size="M">M</button>
+        <button data-size="L">L</button>
+      </div>
+      <button class="order-btn" disabled>
+        Order via Email
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="p5" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content p-4">
+      <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
+
+      <img src="./assets/media/sorc.jpeg" class="mb-4">
+
+      <h3>Sorc</h3>
+      <p class="text-muted">3000 RSD</p>
+      <p>Relax fit</p>
+
+      <div class="size-selector d-flex gap-2 mt-3">
+        <button class="active" data-size="S">S</button>
+        <button data-size="M">M</button>
+        <button data-size="L">L</button>
+      </div>
+      <button class="order-btn" disabled>
+        Order via Email
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
