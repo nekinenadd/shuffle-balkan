@@ -925,3 +925,54 @@ body {
 .footer-item:hover i {
   transform: scale(1.15);
 }
+
+
+
+
+
+
+
+
+
+
+/* Targetiraj sve modal-e p1 do p6 */
+#p1 .btn-close,
+#p2 .btn-close,
+#p3 .btn-close,
+#p4 .btn-close,
+#p5 .btn-close,
+#p6 .btn-close {
+  position: absolute;   /* uvek gore desno */
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  opacity: 1;           /* uvek vidljivo */
+  filter: none;         /* reset filter */
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Dark mode: invertuj boju da bude bela */
+.dark-mode #p1 .btn-close,
+.dark-mode #p2 .btn-close,
+.dark-mode #p3 .btn-close,
+.dark-mode #p4 .btn-close,
+.dark-mode #p5 .btn-close,
+.dark-mode #p6 .btn-close,
+[data-theme="dark"] #p1 .btn-close,
+[data-theme="dark"] #p2 .btn-close,
+[data-theme="dark"] #p3 .btn-close,
+[data-theme="dark"] #p4 .btn-close,
+[data-theme="dark"] #p5 .btn-close,
+[data-theme="dark"] #p6 .btn-close {
+  filter: invert(1);
+}
+
+/* Hover animacija */
+#p1 .btn-close:hover,
+#p2 .btn-close:hover,
+#p3 .btn-close:hover,
+#p4 .btn-close:hover,
+#p5 .btn-close:hover,
+#p6 .btn-close:hover {
+  transform: scale(1.2);
+}
