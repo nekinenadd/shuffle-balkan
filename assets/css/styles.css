@@ -303,6 +303,34 @@ body {
   filter: invert(1);
 }
 
+.image-scroll {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.image-scroll img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+/* Optional – lepši scrollbar */
+.image-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.image-scroll::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 10px;
+}
+
+
 /* SLOGAN BEGIN */
 .slogan-section {
   padding: clamp(4rem, 10vw, 7rem) 1rem;
