@@ -452,6 +452,17 @@ body {
   border-radius: 1.5rem;
 }
 
+.reserve-modal .btn-close {
+  opacity: 1;
+  filter: none;
+}
+
+[data-theme="dark"] .reserve-modal .btn-close {
+  filter: invert(1);
+}
+
+
+
 /* Contact buttons */
 .contact-option {
   display: block;
@@ -856,3 +867,18 @@ body {
     height: 200px;
   }
 }
+
+#instagramModal .modal-content {
+  border-radius: 20px;
+  background: var(--bg);
+  color: var(--text);
+  border: none;
+}
+
+#instagramModal .btn-danger {
+  background: #E1306C;
+  border: none;
+}
+
+
+

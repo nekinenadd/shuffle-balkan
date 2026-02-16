@@ -7,6 +7,8 @@
 
   <link rel="icon" type="image/png" href="assets/media/maloboljarez.png">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -58,7 +60,6 @@
       <!-- Left text -->
       <div class="col-md-6 mb-4 mb-md-0">
         <h2>Prva shuffle škola na Balkanu</h2>
-        <h2 class="welcome-title">Dobrodošli su svi</h2>
 
     <div class="welcome-text">
       <p>
@@ -208,9 +209,11 @@
       <img src="assets/media/plesanjesvetlapozadina.JPG" alt="">
       <img src="assets/media/sesirici.JPG" alt="">
       <img src="assets/media/slikazagal1.jpeg" alt="">
+      <!-- ORIGINAL SET 
       <video autoplay muted loop playsinline>
         <source src="assets/media/snimakzagaleriju.mov" type="video/mp4">
       </video>
+      -->
 
       <!-- DUPLICATE SET (for infinite illusion) -->
       <img src="assets/media/randomkulslika.JPG" alt="">
@@ -220,10 +223,11 @@
       <img src="assets/media/plesanjesvetlapozadina.JPG" alt="">
       <img src="assets/media/sesirici.JPG" alt="">
       <img src="assets/media/slikazagal1.jpeg" alt="">
+      <!-- DUPLICATE SET (for infinite illusion) 
       <video autoplay muted loop playsinline>
         <source src="assets/media/snimakzagaleriju.mov" type="video/mp4">
       </video>
-
+      -->
 
     </div>
   </div>
@@ -346,7 +350,7 @@
       <p>Relax fit</p>
 
       <div class="size-selector d-flex gap-2 mt-3">
-        <button class="active" data-size="S">S</button>
+        <button data-size="S">S</button>
         <button data-size="M">M</button>
         <button data-size="L">L</button>
       </div>
@@ -372,12 +376,12 @@
       <p>Relax fit</p>
 
       <div class="size-selector d-flex gap-2 mt-3">
-        <button class="active" data-size="S">S</button>
+        <button  data-size="S">S</button>
         <button data-size="M">M</button>
         <button data-size="L">L</button>
       </div>
       <button class="order-btn" disabled>
-        Order via Email
+        Naruči
       </button>
     </div>
   </div>
@@ -395,12 +399,12 @@
       <p>Relax fit</p>
 
       <div class="size-selector d-flex gap-2 mt-3">
-        <button class="active" data-size="S">S</button>
+        <button data-size="S">S</button>
         <button data-size="M">M</button>
         <button data-size="L">L</button>
       </div>
       <button class="order-btn" disabled>
-        Order via Email
+        Naruči
       </button>
     </div>
   </div>
@@ -423,7 +427,7 @@
         <button data-size="L">L</button>
       </div>
       <button class="order-btn" disabled>
-        Order via Email
+        Naruči
       </button>
     </div>
   </div>
@@ -441,12 +445,12 @@
       <p>Relax fit</p>
 
       <div class="size-selector d-flex gap-2 mt-3">
-        <button class="active" data-size="S">S</button>
+        <button data-size="S">S</button>
         <button data-size="M">M</button>
         <button data-size="L">L</button>
       </div>
       <button class="order-btn" disabled>
-        Order via Email
+        Naruči
       </button>
     </div>
   </div>
@@ -474,11 +478,44 @@
         <button data-size="L">L</button>
       </div>
       <button class="order-btn" disabled>
-        Order via Email
+        Naruči
       </button>
     </div>
   </div>
 </div>
+
+
+<!-- Instagram Redirect Modal -->
+<div class="modal fade" id="instagramModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+
+      <div class="mb-3">
+        <i class="bi bi-instagram" style="font-size: 3rem; color: #E1306C;"></i>
+      </div>
+
+      <h4 class="mb-3">Radnja trenutno nije u funkciji</h4>
+
+      <p class="text">
+        Naručite proizvode putem našeg Instagram profila.
+      </p>
+
+      <div class="d-flex justify-content-center gap-3 mt-3">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">
+          Nazad
+        </button>
+
+        <a href="https://www.instagram.com/IME_PROFILA/"
+           target="_blank"
+           class="btn btn-danger">
+          Idi na Instagram
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 
 

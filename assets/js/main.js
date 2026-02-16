@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let selectedSize = null;
 
+    // Selektovanje veličine
     sizeButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         sizeButtons.forEach(b => b.classList.remove('active'));
@@ -46,25 +47,22 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
+    // NOVO ponašanje dugmeta
     orderBtn.addEventListener('click', () => {
       if (!selectedSize) return;
 
-      const productName =
-        modal.querySelector('h3')?.innerText || 'Product';
-      const price =
-        modal.querySelector('.price')?.innerText || '';
+      // Zatvori trenutni product modal
+      const currentModal = bootstrap.Modal.getInstance(modal);
+      if (currentModal) {
+        currentModal.hide();
+      }
 
-      const subject = encodeURIComponent(`Order: ${productName}`);
-      const body = encodeURIComponent(
-        `Hello,\n\nI would like to order:\n\n` +
-        `Product: ${productName}\n` +
-        `Size: ${selectedSize}\n` +
-        `Price: ${price}\n\n` +
-        `Thank you`
+      // Otvori Instagram popup modal
+      const instagramModal = new bootstrap.Modal(
+        document.getElementById('instagramModal')
       );
 
-      window.location.href =
-        `mailto:your@email.com?subject=${subject}&body=${body}`;
+      instagramModal.show();
     });
   });
 });
