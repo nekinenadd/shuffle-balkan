@@ -848,11 +848,11 @@ body {
 
 /* Infinite animation */
 @keyframes scrollGallery {
-  from {
-    transform: translateX(0);
+  0% {
+    transform: translate3d(0,0,0);
   }
-  to {
-    transform: translateX(-50%);
+  100% {
+    transform: translate3d(-50%,0,0);
   }
 }
 
@@ -861,10 +861,28 @@ body {
   animation-play-state: paused;
 }
 
-/* Mobile */
+/* MOBILE FIX */
 @media (max-width: 768px) {
+
+ .gallery-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scrollGallery 35s linear infinite;
+  will-change: transform;
+  transform: translate3d(0,0,0);
+  backface-visibility: hidden;
+}
+
   .gallery-track img {
     height: 200px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  /* sakrij scrollbar */
+  .gallery-track::-webkit-scrollbar {
+    display: none;
   }
 }
 
@@ -878,6 +896,17 @@ body {
 #instagramModal .btn-danger {
   background: #E1306C;
   border: none;
+}
+
+@media (max-width: 768px) {
+  .gallery-track {
+    animation-duration: 45s; /* sporije = manje opterećenje */
+  }
+
+  .gallery-track img {
+    height: 200px;
+    flex-shrink: 0;
+  }
 }
 
 
